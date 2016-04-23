@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Merriweather:300" />
+    {% include favicon.html %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div id="content">
+        {{ content }}
+    </div>
+    <div class="footer">
+        Contact me at
+        <span id="mail">da&#97;n<span style="display: none;">(at)</span><span id="mailat"></span>daanmichiels<span style="display: none;">(dot)</span><span id="maildot"></span>com</span>.
+    </div>
+    <script type="text/javascript">
+        var email = "dxxn@dxxnmichi"
+        email = email + "els.com";
+        email = email.replace(/x/g, "a");
+        begin = '<a href="mail';
+        begin = begin + 'to:' + email;
+        begin = begin + '">';
+        var end = '</a>';
+        document.getElementById("mail").innerHTML = begin + email + end;
+    </script>
+</body>

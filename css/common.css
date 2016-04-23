@@ -19,6 +19,36 @@ div#content {
 
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+div.footer {
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #afafaf;
+    font-size: 0.8em;
+    padding: 1em 0em;
+}
+div.footer a {
+    color: #afafaf;
+}
+div.footer a:hover {
+    color: #3d9145;
+}
+
+.center {
+    text-align: center;
+}
+
+span#mailat:after {
+    content: '@';
+}
+span#maildot:after {
+    content: '.';
+}
+.invisible {
     display: none;
 }
 
@@ -52,33 +82,4 @@ ul.linkmenu a {
     color: #000000;
     padding: 1em;
 }
-
-div.footer {
-    height: auto;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: #afafaf;
-    font-size: 0.8em;
-    padding: 1em 0em;
-}
-div.footer a {
-    color: #afafaf;
-}
-div.footer a:hover {
-    color: #3d9145;
-}
-
-.center {
-    text-align: center;
-}
-
-span#mailat:after {
-    content: '@';
-}
-span#maildot:after {
-    content: '.';
-}
-
 
