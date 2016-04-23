@@ -66,6 +66,9 @@ div.footer {
 div.footer a {
     color: #afafaf;
 }
+div.footer a:hover {
+    color: #3d9145;
+}
 
 .center {
     text-align: center;
