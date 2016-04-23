@@ -40,15 +40,17 @@
         </ul>
     </div>
     <div class="footer">
-        Contact me at <span id="mail">da&#97;n@d<span style="display: none;">hi</span>aanmichiels.com</span>.
+        Contact me at
+        <span id="mail">da&#97;n<span style="display: none;">(at)</span><span id="mailat"></span>daanmichiels<span style="display: none;">(dot)</span><span id="maildot"></span>com</span>.
     </div>
     <script type="text/javascript">
-        var email = "dxxn@dxxnmichiels.com";
-        var email = email.replace(/x/g, "a");
+        var email = "dxxn@dxxnmichi"
+        email = email + "els.com";
+        email = email.replace(/x/g, "a");
         begin = '<a href="mail';
-        begin = begin + 'to:' + email
-        begin = begin + '">'
-        var end = '</a>'
+        begin = begin + 'to:' + email;
+        begin = begin + '">';
+        var end = '</a>';
         document.getElementById("mail").innerHTML = begin + email + end;
     </script>
 </body>

@@ -71,4 +71,11 @@ div.footer a {
     text-align: center;
 }
 
+span#mailat:after {
+    content: '@';
+}
+span#maildot:after {
+    content: '.';
+}
+
 
