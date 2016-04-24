@@ -6,9 +6,11 @@
 
 html {
     height: 100%;
+    overflow: visible;
 }
 body {
     min-height: 100%;
+    overflow: visible;
 }
 body, html {
     padding: 0;
