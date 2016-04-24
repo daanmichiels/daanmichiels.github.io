@@ -1,0 +1,51 @@
+---
+# front matter to ensure Jekyll properly reads file
+---
+
+@import 'colors';
+
+p.splash {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    margin: 2% 0;
+}
+ul.linkmenu {
+    margin: 2em 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+ul.linkmenu li { 
+    padding: 0;
+    display: inline-block;
+    border: 2px solid $color-primary;
+    border-radius: 5px;
+    margin: 1% 0;
+}
+ul.linkmenu li:hover {
+    background-color: $color-primary-light;
+}
+ul.linkmenu a {
+    display: block;
+    text-decoration: none;
+    color: $color-text-main;
+    padding: 1em;
+}
+
+div#content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 2.4em 0;
+    padding: 0;
+}
+// the #footer sits on top of the #content
+// where there is some room because of the padding
+div#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 1em;
+}

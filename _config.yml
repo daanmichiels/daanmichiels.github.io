@@ -16,3 +16,8 @@ github_username:  daanmichiels
 
 # Build settings
 markdown: kramdown
+
+permalink: /:title/
+
+sass:
+    sass_dir: _sass

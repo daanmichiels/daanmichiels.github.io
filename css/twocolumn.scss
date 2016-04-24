@@ -1,0 +1,56 @@
+---
+# front matter to ensure Jekyll properly reads file
+---
+
+@import 'colors';
+
+$sidebar-width: 15rem;
+
+div#maincolumn {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 $sidebar-width 0 0;
+}
+
+div#content {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 0.5em 1.5em 2.5em 1.5em;
+}
+
+div#footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: $sidebar-width;
+	padding: 1em 1em;
+}
+
+div#sidebar {
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	width: $sidebar-width;
+	top: 0;
+	bottom: 0;
+	border-left: 3px solid $color-primary;
+	padding: 0 1rem;
+	background-color: $color-primary-light;
+}
+
+div#sidebar li {
+	font-size: 0.9em;
+}
+
+div#sidebar ul {
+	list-style-type: none;
+	padding-left: 0.1em;
+}
+
+div#sidebar li {
+	
+}
+
+
+
