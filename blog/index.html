@@ -1,0 +1,32 @@
+---
+layout: default
+title: Blog
+permalink: /blog
+---
+
+      <h1>Blog</h1>
+      <p class="lead">
+        Or a passable approximation thereof.
+      </p>
+      <!-- <div class="list-group">
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+  </a>
+</div> -->
+      <div class="list-group">
+        {% for post in site.posts %}
+          <a href="{{ post.url }}" class="list-group-item" style="border: 1px solid #D0D6DA;">
+            <h4 class="text-success">
+              {{ post.title }}
+            </h4>
+            <p>
+              {{ post.excerpt }}
+            </p>
+          </a>
+        {% endfor %}
+      </div>

@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<nav>
+  <ul class="pager">
+    {% if page.previous.url %}
+    <li class="previous"><a href="{{ page.previous.url }}">← Older</a></li>
+    {% endif %}
+    {% if page.next.url %}
+    <li class="next"><a href="{{ page.next.url }}">Newer →</a></li>
+    {% endif %}
+  </ul>
+</nav>
+
+{% if page.jupyter != true %}
+<h1>{{ page.title }}</h1>
+<p class="lead">
+  {{ page.subtitle }}
+</p>
+{% endif %}
+
+{{ content }}
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<!-- MathJax configuration -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    // Center justify equations in code and markdown cells. Elsewhere
+    // we use CSS to left justify single line equations in code cells.
+    displayAlign: 'center',
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}},
+        linebreaks: { automatic: true }
+    }
+});
+</script>

@@ -1,41 +1,48 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Daan Michiels</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700%7CMerriweather:300italic,300,700" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<body>
-    <div id="wrapper">
-        <h1>Daan Michiels</h1>
-        <div id="splash">
-            Hi.
+---
+layout: default
+title: Home
+permalink: /
+---
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hi.</h1>
+        <p>
+          My name is Daan.
+        </p>
+      </div>
+      <p>
+        <b>By day</b>, I'm a mathematician.
+        I'm working on a PhD in differential geometry at
+        the University of Illinois at Urbana-Champaign in the US.
+        This mostly involves me sitting in a chair and thinking really hard
+        about higher-dimensional shapes.
+        There's also some teaching involved, and most semesters I lead a team
+        developing software at the
+        <a href="https://math.illinois.edu/research/igl">Illinois Geometry Lab</a>.
+      </p>
+      <p>
+        <b>By night</b>, well, I'm mostly asleep. But when I'm not, you can
+        probably find me reading about computer science, software, technology,
+        AI, data science or space. There's a good chance I'm writing code.
+        Or climbing at the local gym.
+      </p>
+      <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 1em;">
+        <div style="width: 12em; margin: 0.3em 0.5em;">
+          <a href="http://math.uiuc.edu/~michiel2/" class="btn btn-info center-block">
+            <i class="fa fa-lg fa-fw fa-graduation-cap" aria-hidden="true"></i>&nbsp;
+            UIUC
+          </a>
         </div>
-        <div id="subsplash">
-                My name is Daan.
+        <div style="width: 12em; margin: 0.3em 0.5em;">
+          <a href="https://www.linkedin.com/in/daanmichiels" class="btn btn-info center-block">
+            <i class="fa fa-lg fa-fw fa-linkedin-square" aria-hidden="true"></i>
+            LinkedIn
+          </a>
         </div>
-        <div id="links">
-            <ul class="linkmenu">
-                <li><a href="http://math.uiuc.edu/~michiel2/">Mathematical homepage</a></li>
-                <li><a href="https://github.com/daanmichiels/">Find me on GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/daanmichiels">Find me on LinkedIn</a></li>
-                <!-- <li><a href="experiments.html">More...</a></li> -->
-            </ul>
+        <div style="width: 12em; margin: 0.3em 0.5em;">
+          <a href="https://github.com/daanmichiels/" class="btn btn-info center-block">
+            <i class="fa fa-lg fa-fw fa-github" aria-hidden="true"></i>
+            GitHub
+          </a>
         </div>
-        <div id="footer">
-            Contact me at
-            <span id="mail">da&#97;n<span style="display: none;">(at)</span><span id="mailat"></span>daanmichiels<span style="display: none;">(dot)</span><span id="maildot"></span>com</span>.
-        </div>
-    </div>
-    <script type="text/javascript">
-        var email = "dxxn@dxxnmichi"
-        email = email + "els.com";
-        email = email.replace(/x/g, "a");
-        begin = '<a href="mail';
-        begin = begin + 'to:' + email;
-        begin = begin + '">';
-        var end = '</a>';
-        document.getElementById("mail").innerHTML = begin + email + end;
-    </script>
-</body>
+      </div>
